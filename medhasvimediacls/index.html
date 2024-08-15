@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medhasvi Medicals</title>
+    <title>Medhasvi Medical</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Medhasvi Medicals</h1>
+        <h1>Medhasvi Medical</h1>
+        <nav id="navBar">
+            <a href="#login" id="loginLink">Login</a>
+            <a href="#medicals" id="medicalsLink" style="display: none;">View Medicals</a>
+            <a href="#cart" id="cartLink" style="display: none;">Cart</a>
+            <a href="#login" id="logoutLink" style="display: none;">Logout</a>
+        </nav>
     </header>
-    <main>
-        <section id="product-list">
-            <h2>Available Products</h2>
-            <ul id="products">
-                <!-- Product items will be inserted here -->
-            </ul>
-        </section>
-        <section id="cart">
-            <h2>Your Cart</h2>
-            <ul id="cart-items">
-                <!-- Cart items will be inserted here -->
-            </ul>
-            <p id="total">Total: $0.00</p>
-        </section>
-    </main>
+    
+    <!-- Login Page -->
+    <section id="login" class="page">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Medicals Page -->
+    <section id="medicals" class="page" style="display: none;">
+        <h2>Available Medicals</h2>
+        <div id="medicalsContainer">
+            <!-- Medical buttons will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Cart Page -->
+    <section id="cart" class="page" style="display: none;">
+        <h2>Your Cart</h2>
+        <ul id="cartList"></ul>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
