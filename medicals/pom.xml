@@ -5,12 +5,12 @@
 
     <!-- Project coordinates -->
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.example</groupId>
+    <groupId>Medical</groupId>
     <artifactId>my-app</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <!-- Project description -->
-    <name>My Application</name>
+    <name>medical</name>
     <description>A simple Maven project</description>
 
     <!-- Dependencies -->
