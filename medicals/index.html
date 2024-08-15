@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medhasvi Medical</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Medhasvi Medical</h1>
+        <nav id="navBar">
+            <a href="#login" id="loginLink">Login</a>
+            <a href="#medicals" id="medicalsLink" style="display: none;">View Medicals</a>
+            <a href="#cart" id="cartLink" style="display: none;">Cart</a>
+            <a href="#login" id="logoutLink" style="display: none;">Logout</a>
+        </nav>
+    </header>
+    
+    <!-- Login Page -->
+    <section id="login" class="page">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+    <!-- Medicals Page -->
+    <section id="medicals" class="page" style="display: none;">
+        <h2>Available Medicals</h2>
+        <div id="medicalsContainer">
+            <!-- Medical buttons will be added dynamically -->
+        </div>
+    </section>
+
+    <!-- Cart Page -->
+    <section id="cart" class="page" style="display: none;">
+        <h2>Your Cart</h2>
+        <ul id="cartList"></ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
